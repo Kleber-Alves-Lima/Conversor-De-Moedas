@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> e001389 (Adicionando pasta assets ao projeto)
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.InputStream;
@@ -42,4 +46,8 @@ public class ConversorAPI {
 
         return dadosConvertido;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> e001389 (Adicionando pasta assets ao projeto)

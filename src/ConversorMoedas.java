@@ -67,6 +67,7 @@ public class ConversorMoedas {
                 System.out.println("Opção inválida, tente novamente");
             }
         }
+<<<<<<< HEAD
 }
 // Função para exibir os resultados de conversão
 public static void exibirResultadoConversao(DadosConvertido resultado) {
@@ -84,4 +85,23 @@ public static void exibirResultadoConversao(DadosConvertido resultado) {
         System.out.println("Falha ao buscar o valor da conversão.");
     }
 }
+=======
+    }
+    // Função para exibir os resultados de conversão
+    public static void exibirResultadoConversao(DadosConvertido resultado) {
+        if (resultado != null) {
+            System.out.println("Moeda de origem: " + resultado.getBase_code());
+            System.out.println("Moeda de destino: " + resultado.getTarget_code());
+            System.out.println("Taxa de câmbio (" + resultado.getBase_code() + " para " + resultado.getTarget_code() + "): "+ resultado.getConversion_rate());
+
+            System.out.printf("Resultado da conversão: "+" %.2f%n",resultado.getConversion_result());
+
+            // Exibe a cotação inversa (quanto 1 EUR vale em USD)
+            double valorDacotacao = 1 / resultado.getConversion_rate();
+            System.out.printf("Cotação atual de 1 "+ resultado.getTarget_code()+" é igual a "+resultado.getBase_code() +": %.4f%n", valorDacotacao);
+        } else {
+            System.out.println("Falha ao buscar o valor da conversão.");
+        }
+    }
+>>>>>>> e001389 (Adicionando pasta assets ao projeto)
 }

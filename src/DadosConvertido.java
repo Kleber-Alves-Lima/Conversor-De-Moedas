@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> e001389 (Adicionando pasta assets ao projeto)
 public class DadosConvertido {
     private String moedaBase;
     private String moedaParaConverter;
@@ -39,4 +43,8 @@ public class DadosConvertido {
                 "\nTaxa de câmbio: " + taxaConversao +
                 "\nResultado da conversão: " + resultadoConversao;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> e001389 (Adicionando pasta assets ao projeto)
