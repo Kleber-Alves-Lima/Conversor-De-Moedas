@@ -22,4 +22,56 @@ Explore o projeto e veja como o uso de APIs podem enriquecer as aplicações.  P
 
 [Página GitHub - https://kleber-alves-lima.github.io/Encriptador/](https://kleber-alves-lima.github.io/Encriptador/)
 
-<h1 align="center"> Recusrsos do Sistema </h1>
+<h1 align="center"> Recusrsos do Sistema </h1><br>
+<h3> Descrição </h3>
+Este é um Conversor de Moedas desenvolvido em Java que utiliza a API da ExchangeRate-API para realizar conversões de diversas moedas. O programa oferece
+uma interface de linha de comando onde o usuário pode selecionar as moedas de origem e destino, inserir um valor, e obter a taxa de câmbio atualizada e o valor convertido. <br>
+
+Conversão entre múltiplas moedas:<br>
+
+Dólar (USD) ↔ Peso Argentino (ARS)<br>
+Dólar (USD) ↔ Real Brasileiro (BRL)<br>
+Dólar (USD) ↔ Dólar Canadense (CAD)<br>
+Euro (EUR) ↔ Dólar (USD)<br>
+
+Exibição da taxa de câmbio atualizada.<br>
+Cálculo e exibição do valor convertido.<br>
+Exibição da cotação inversa.<br>
+
+<h3>Menu de Opções</h3>
+
+***************************************************
+Seja bem vindo ao conversor de moedas
+
+1) Dólar           ==> Peso Argentino 
+2) Peso Argentino  ==> Dólar   
+3) Dólar           ==> Real Brasileiro 
+4) Real Brasileiro ==> Dólar 
+5) Dólar           ==> Dólar Canadense 
+6) Euro            ==> Dólar 
+7) sair 
+***************************************************
+
+Escolha uma das opções de conversão .: 1<br>
+Informe o valor a ser convertido .: 100.00<br>
+
+Moeda de origem: USD<br>
+Moeda de destino: ARS<br>
+Taxa de câmbio (USD para ARS): 120.00<br>
+Resultado da conversão: 12000.00<br>
+Cotação atual de 1 ARS é igual a USD: 0.0083<br>
+
+*Tecnologias Utilizadas*<br>
+
+Java: Linguagem de programação principal.<br>
+ExchangeRate-API: API utilizada para obter as taxas de câmbio.<br>
+Gson: Biblioteca para manipulação de JSON.<br>
+
+*Configuração da API* <br>
+Este projeto utiliza a ExchangeRate-API, e uma chave de API é necessária para obter as taxas de câmbio.<br>
+
+Para configurar sua chave de API:<br>
+Obtenha uma chave de API gratuita registrando-se no site da [*ExchangeRate-API*](https://ExchangeRate-API.com).<br>
+Atualize o código com sua chave de API:<br>
+No arquivo ConversorAPI.java, substitua a linha abaixo pela sua chave de API:<br>
+private String apiKey = "sua-chave-api-aqui";
