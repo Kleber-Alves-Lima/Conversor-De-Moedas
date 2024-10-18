@@ -76,12 +76,13 @@ Atualize o código com sua chave de API:<br>
 No arquivo ConversorAPI.java, substitua a linha abaixo pela sua chave de API:<br>
 private String apiKey = "sua-chave-api-aqui";
 
+<h1 align="center"> Parceiros Educacionais</h1>
 
 Este curso é oferecido por:   
  
-- <img class="imagem" src="./Assets/Logo Alura.png" alt="logo Alura" >          **Alura**: Reconhecida instituição de ensino em tecnologia, especializada em cursos de desenvolvimento de software e outras áreas tecnológicas.
+- <img class="imagem" src="./src/Assets/Logo Alura.png" alt="logo Alura" >          **Alura**: Reconhecida instituição de ensino em tecnologia, especializada em cursos de desenvolvimento de software e outras áreas tecnológicas.
   
-- <img class="imagem" src="./Assets/logo one.webp"  alt="logo Alura" >  **Oracle Next Education**: Programa da Oracle que visa capacitar profissionais para o mercado de tecnologia com treinamento avançado e recursos educacionais.
+- <img class="imagem" src="./src/Assets/logo one.webp"  alt="logo Alura" >  **Oracle Next Education**: Programa da Oracle que visa capacitar profissionais para o mercado de tecnologia com treinamento avançado e recursos educacionais.
 
 Juntos, esses parceiros proporcionam um curso abrangente e atualizado, preparando os alunos para se destacarem na área de desenvolvimento e tecnologia.
 
