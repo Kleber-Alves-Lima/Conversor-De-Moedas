@@ -4,17 +4,18 @@
     <br />
     <br />
     <a href="Cadeado">
-      <img src="Assets/criptografia_aguia.png" alt="Imagem de convertendo moedas">
-    </a>
+      <img src="src/Assets/ImagemConversor.png" alt="Imagem de convertendo moedas"  width="300" height="200">
+     </a>
   </h1>
 </div>
 <h1 align="center"> Introdução </h1>
 
 - **Sistema de Conversor de Moedas**
 
-Este projeto de conversor de moedas foi desenvolvido como parte do **Challenge Conversor de Moedas da fase de especialização**, uma iniciativa da [**Alura**](https://www.alura.com.br/) em parceria com o programa [**Oracle Next Education**](https://www.oracle.com/br/education/oracle-next-education/). O sistema foi projetado para converter diferentes tipos de moedas de forma simples e intuitiva.
+Este projeto de conversor de moedas foi desenvolvido como parte do **Challenge Conversor de Moedas da fase de especialização**,uma iniciativa da [**Alura**](https://www.alura.com.br/) em parceria com o programa [**Oracle Next Education**](https://www.oracle.com/br/education/oracle-next-education/). O sistema foi projetado para converter diferentes tipos de moedas de 
+forma simples e intuitiva. 
 
-O desafio proposto pelo curso de desenvolvimento de sistemas visou não apenas o domínio técnico, mas também a compreensão de conceitos fundamentais de integração entre sistemas . Este projeto reflete o comprometimento com a inovação e a excelência técnica, aplicando conhecimentos adquiridos ao longo do curso.
+O desafio proposto pelo curso de desenvolvimento de sistemas visou não apenas o domínio técnico, mas também a compreensão de conceitos fundamentais de integração entre sistemas . Este projeto reflete o comprometimento com a inovação e a excelência técnica, aplicando conhecimentos adquiridos ao longo do curso . 
 
 Explore o projeto e veja como o uso de APIs podem enriquecer as aplicações.  Para acessá-lo, clique em um dos links abaixo:
 
@@ -23,11 +24,13 @@ Explore o projeto e veja como o uso de APIs podem enriquecer as aplicações.  P
 [Página GitHub - https://kleber-alves-lima.github.io/Encriptador/](https://kleber-alves-lima.github.io/Encriptador/)
 
 <h1 align="center"> Recusrsos do Sistema </h1><br>
-<h3> Descrição </h3>
+
+- *Descrição* <br>
+
 Este é um Conversor de Moedas desenvolvido em Java que utiliza a API da ExchangeRate-API para realizar conversões de diversas moedas. O programa oferece
 uma interface de linha de comando onde o usuário pode selecionar as moedas de origem e destino, inserir um valor, e obter a taxa de câmbio atualizada e o valor convertido. <br>
 
-Conversão entre múltiplas moedas:<br>
+- *Conversão entre múltiplas moedas:*<br>
 
 Dólar (USD) ↔ Peso Argentino (ARS)<br>
 Dólar (USD) ↔ Real Brasileiro (BRL)<br>
@@ -61,13 +64,13 @@ Taxa de câmbio (USD para ARS): 120.00<br>
 Resultado da conversão: 12000.00<br>
 Cotação atual de 1 ARS é igual a USD: 0.0083<br>
 
-*Tecnologias Utilizadas*<br>
+- *Tecnologias Utilizadas*<br>
 
 Java: Linguagem de programação principal.<br>
 ExchangeRate-API: API utilizada para obter as taxas de câmbio.<br>
 Gson: Biblioteca para manipulação de JSON.<br>
 
-*Configuração da API* <br>
+- *Configuração da API* <br><br>
 Este projeto utiliza a ExchangeRate-API, e uma chave de API é necessária para obter as taxas de câmbio.<br>
 
 Para configurar sua chave de API:<br>
