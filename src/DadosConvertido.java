@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-
->>>>>>> e001389 (Adicionando pasta assets ao projeto)
 public class DadosConvertido {
     private String moedaBase;
     private String moedaParaConverter;
@@ -15,6 +11,7 @@ public class DadosConvertido {
         this.taxaConversao = taxaConversao;
     }
 
+    // Adicione os métodos getters e setters conforme necessário
     public String getBase_code() {
         return moedaBase;
     }
@@ -27,24 +24,12 @@ public class DadosConvertido {
         return taxaConversao;
     }
 
+    public void setValorParaConverter(double valor) {
+        this.valorParaConverter = valor;
+        this.resultadoConversao = valor * taxaConversao;
+    }
+
     public double getConversion_result() {
-        return valorParaConverter * taxaConversao;
+        return resultadoConversao;
     }
-
-    public void setValorParaConverter(double valorParaConverter) {
-        this.valorParaConverter = valorParaConverter;
-        this.resultadoConversao = getConversion_result();
-    }
-
-    @Override
-    public String toString() {
-        return "Moeda de origem: " + moedaBase +
-                "\nMoeda de destino: " + moedaParaConverter +
-                "\nTaxa de câmbio: " + taxaConversao +
-                "\nResultado da conversão: " + resultadoConversao;
-    }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> e001389 (Adicionando pasta assets ao projeto)
