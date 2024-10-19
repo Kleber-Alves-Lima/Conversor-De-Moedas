@@ -1,5 +1,3 @@
-
-
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
@@ -13,10 +11,9 @@ import java.util.Scanner;
 public class ConversorMoedas {
     public static void main(String[] args) throws IOException {
         Scanner leitura = new Scanner(System.in);
-        Scanner valorParaSerConvertido = new Scanner(System.in);
         ConversorAPI conversor = new ConversorAPI();
-        double valorParaConverter =0;
-        int opcao =0;
+        double valorParaConverter = 0;
+        int opcao = 0;
         String menu = """
                 
                 ***************************************************
@@ -39,7 +36,7 @@ public class ConversorMoedas {
             opcao = leitura.nextInt();
             if (opcao >= 1 && opcao <= 6) {
                 System.out.println("Informe o valor a ser convertido .: ");
-                valorParaConverter = valorParaSerConvertido.nextDouble();
+                valorParaConverter = leitura.nextDouble();
             }
 
             if (opcao == 1) {
@@ -67,41 +64,22 @@ public class ConversorMoedas {
                 System.out.println("Opção inválida, tente novamente");
             }
         }
-<<<<<<< HEAD
-}
-// Função para exibir os resultados de conversão
-public static void exibirResultadoConversao(DadosConvertido resultado) {
-    if (resultado != null) {
-        System.out.println("Moeda de origem: " + resultado.getBase_code());
-        System.out.println("Moeda de destino: " + resultado.getTarget_code());
-        System.out.println("Taxa de câmbio (" + resultado.getBase_code() + " para " + resultado.getTarget_code() + "): "+ resultado.getConversion_rate());
-
-        System.out.printf("Resultado da conversão: "+" %.2f%n",resultado.getConversion_result());
-
-        // Exibe a cotação inversa (quanto 1 EUR vale em USD)
-        double valorDacotacao = 1 / resultado.getConversion_rate();
-        System.out.printf("Cotação atual de 1 "+ resultado.getTarget_code()+" é igual a "+resultado.getBase_code() +": %.4f%n", valorDacotacao);
-    } else {
-        System.out.println("Falha ao buscar o valor da conversão.");
     }
-}
-=======
-    }
+
     // Função para exibir os resultados de conversão
     public static void exibirResultadoConversao(DadosConvertido resultado) {
         if (resultado != null) {
             System.out.println("Moeda de origem: " + resultado.getBase_code());
             System.out.println("Moeda de destino: " + resultado.getTarget_code());
-            System.out.println("Taxa de câmbio (" + resultado.getBase_code() + " para " + resultado.getTarget_code() + "): "+ resultado.getConversion_rate());
+            System.out.println("Taxa de câmbio (" + resultado.getBase_code() + " para " + resultado.getTarget_code() + "): " + resultado.getConversion_rate());
 
-            System.out.printf("Resultado da conversão: "+" %.2f%n",resultado.getConversion_result());
+            System.out.printf("Resultado da conversão: %.2f%n", resultado.getConversion_result());
 
             // Exibe a cotação inversa (quanto 1 EUR vale em USD)
             double valorDacotacao = 1 / resultado.getConversion_rate();
-            System.out.printf("Cotação atual de 1 "+ resultado.getTarget_code()+" é igual a "+resultado.getBase_code() +": %.4f%n", valorDacotacao);
+            System.out.printf("Cotação atual de 1 " + resultado.getTarget_code() + " é igual a " + resultado.getBase_code() + ": %.4f%n", valorDacotacao);
         } else {
             System.out.println("Falha ao buscar o valor da conversão.");
         }
     }
->>>>>>> e001389 (Adicionando pasta assets ao projeto)
 }
