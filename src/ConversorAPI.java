@@ -1,23 +1,10 @@
-<<<<<<< HEAD
-=======
-
->>>>>>> e001389 (Adicionando pasta assets ao projeto)
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.InputStream;
-import java.net.HttpURLConnection;
-import java.net.URL;
-
-import com.google.gson.JsonElement;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
 
 public class ConversorAPI {
     private String apiKey = "61f30b0b8cb424e32e56afd2";
+
     public DadosConvertido BuscaValor(String moedaBase, String moedaParaConverter, double valor) {
-        //String apiKey = "61f30b0b8cb424e32e56afd2";
         // URL da API para buscar a taxa de conversão (substitua pela sua chave)
-        String url_str = "https://v6.exchangerate-api.com/v6/"+apiKey+"/pair/" + moedaBase + "/" + moedaParaConverter;
+        String url_str = "https://v6.exchangerate-api.com/v6/" + apiKey + "/pair/" + moedaBase + "/" + moedaParaConverter;
 
         // Inicializa a resposta da API
         DadosConvertido dadosConvertido = null;
@@ -46,8 +33,4 @@ public class ConversorAPI {
 
         return dadosConvertido;
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> e001389 (Adicionando pasta assets ao projeto)
